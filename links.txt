@@ -1,0 +1,3 @@
+https://towardsdatascience.com/how-to-create-real-time-face-detector-ff0e1f81925f
+https://analyticsindiamag.com/10-face-datasets-to-start-facial-recognition-projects/
+https://machinelearningmastery.com/how-to-perform-face-recognition-with-vggface2-convolutional-neural-network-in-keras/
