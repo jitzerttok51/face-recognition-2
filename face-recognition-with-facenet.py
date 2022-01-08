@@ -2,14 +2,12 @@
 
 MODEL_URL = "https://drive.google.com/u/0/uc?id=1PZ_6Zsy1Vb0s0JmjEmVd8FS99zoMCiN1&export=download"
 
-from re import M
 import urllib.request as req
 import urllib.response as resp
 from http.client import HTTPMessage
 import os
 import os.path as path
 import cv2
-from keras.optimizers import get
 import numpy as np
 import mtcnn
 import keras
@@ -110,7 +108,7 @@ def cacheDataset():
 
     np.savez_compressed(DATASET, xTrain, yTrain, xTest, yTest)
 
-def loadDataset():
+def loadDatasets():
     if not path.exists(DATASET):
         cacheDataset()
     
@@ -122,7 +120,7 @@ def loadDataset():
 EMBEDDINGS_DATASET = 'dataset/embeddings-dataset.npz'
 
 def cacheEmbeddingsDataset():
-    xTrain, yTrain, xTest, yTest = loadDataset()
+    xTrain, yTrain, xTest, yTest = loadDatasets()
     model = keras.models.load_model(getModel())
     print('Loaded Model')
 

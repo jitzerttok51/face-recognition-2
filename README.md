@@ -1,3 +1,12 @@
 # face-recognition-2
 
-Link to document: https://docs.google.com/document/d/1RnlqqEchrSllHoPm9EJ4wWfPAY5dDTTB/edit
+# Setup Guide
+
+requires Pyhno 3.7
+
+python -m venv env
+env\Scripts\activate
+pip install --upgrade pip
+pip install -r requirements.txt
+
+
